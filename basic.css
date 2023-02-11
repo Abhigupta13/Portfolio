@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+                                                                /* navbar designing */
+.max-width {
+    margin: auto;
+    padding: 0 80px;
+    max-width: 1300px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Luxurious Roman';
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color:crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px ;
+    transition: color 0.3s ease ;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+    font-weight: bolder;
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .menu li a:hover{
+    color: black;
+}
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+                                                                    /* home section designing */
+.home{
+    display: flex;
+    background: url("banner.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Luxurious Roman';
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .max-width .text-1{
+    font-size: 27px;
+}
+.home .max-width .text-2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .max-width .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .max-width .text-3 span{
+    color: crimson;
+    font-weight: 600;
+}
+.home .home-content a {
+    display: inline-block;
+    font-size: 25px;
+    background: crimson;
+    color: #fff;
+    padding: 12px 36px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+}
+.home .home-content a:hover{
+    color: #fff;
+    transform: scale(1.05);
+    font-size: 25px;
+    transition: all 0.3s ease;
+    background: none;
+}
+
+
+
+
+
+                                                            /* About section styling */
+section{
+    padding: 50px 0;
+}                                                            
+.about{
+    font-family:'Times New Roman', Times, serif ;
+}
+.about .title{
+    font-family: 'Luxurious Roman' ;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Who i am";
+    font-size: 20px;
+    position: absolute;
+    bottom: -12px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left {
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+
+}
+.about .about-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    background: crimson;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+
+
+                                                            /* services section styling */
+section{
+    padding: 50px 0;
+}
+.services{
+    font-family:'Times New Roman', Times, serif ;
+    background: #111;
+    color: #fff;
+}
+.services .title{
+    font-family: 'Luxurious Roman' ;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.services .title::after{
+    content: "What i provide";
+    font-size: 20px;
+    position: absolute;
+    bottom: -12px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .serv-content .card{
+    width: calc(33% - 40px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor:pointer;
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    text-align: center;
+    justify-content: center;
+}
+ .services .serv-content .card:hover .box{
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+                                                             /* skills section styling */
+.skills , .teams ,.contact{
+    font-family:'Times New Roman', Times, serif;
+}
+.skills .title{
+    font-family: 'Luxurious Roman' ;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    content: "What i know";
+    font-size: 20px;
+    position: absolute;
+    bottom: -12px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+.skills .skills-content .column .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    background: crimson;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid crimson;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .right .bars {
+    margin-bottom: 20px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgreen;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background: crimson;
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+.skills .skills-content .right .javascript::before{
+    width: 50%;
+}
+.skills .skills-content .right .php::before{
+    width: 30%;
+}
+.skills .skills-content .right .sql::before{
+    width: 40%;
+}
+
+
+
+
+
+
+
+
+
+                                                            /* teams section styling */
+.teams{
+    font-family:'Times New Roman', Times, serif ;
+    background: #111;
+    color: #fff;
+}
+.teams .title{
+    font-family: 'Luxurious Roman' ;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.teams .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.teams .title::after{
+    content: "What i provide";
+    font-size: 20px;
+    position: absolute;
+    bottom: -12px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: justify;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 25%;
+    border: 5px solid crimson;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+    transition: all 0.3s ease;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+} 
+.owl-dot.active,.owl-dot:hover{
+    background: crimson!important;
+}
+
+
+
+
+
+
+
+
+                                                            /* conatct section styling */
+.contact .title{
+    font-family: 'Luxurious Roman' ;
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content: "Get in touch";
+    font-size: 20px;
+    position: absolute;
+    bottom: -12px;
+    color: crimson;
+    left: 50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p {
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    text-align: start;
+    display: flex;
+    height: 65px;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+#icon{
+    margin-top: 9px;
+    font-size: 25px;
+    color: crimson;
+}
+#icon-1{
+    margin-top: 9px;
+    font-size: 25px;
+    color: crimson;
+    margin-left: 2px;
+}
+#icon-2{
+    margin-top: 9px;
+    font-size: 25px;
+    color: crimson;
+    margin-left: -2px;
+}
+ .head{
+    font-weight: 900;
+}
+ .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .field input,.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+.contact .right form .name{
+    margin-right: 20px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+    margin-top: 10px;
+}
+.contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+
+
+
+ 
+
+
+
+                                                            /* footer section styling */
+.footer{
+    background: #111;
+    display: flex;
+    padding: 20px;
+    list-style: none;
+}
+.footer a{
+    margin-right: 30px;
+    color: #444;
+    font-size: 25px;
+}
+.footer a i:hover{
+    transform: scale(1.3);
+    
+    transition: all 0.3s ease;
+}
+#tweet{
+    padding-left: 170px;
+}
+ #tweet:hover{
+    color: rgb(59, 192, 245);
+}
+#facebook:hover{
+    color: blue;
+}
+#whatsapp:hover{
+    color: grey;
+}
+#insta:hover{
+    color: rgb(236, 10, 149);
+}
+#snap:hover{
+    color: yellow;
+}
+#tele:hover{
+    color: blueviolet;
+}
+#link:hover{
+    color: rgb(2, 2, 27);
+}
+
+
+                                                              
+
+
+
+
+
+
+
+
+                                                             /* responsive media queries */
+@media (max-width:1300px){
+    .home .max-width{
+        margin-left: 0;
+    }
+    #tweet{
+        padding-left: 60px;
+    }
+}      
+@media (max-width:1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}                                                             
+@media  (max-width: 990px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        color: #fff;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.7s ease-in-out;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .max-width .text-2{
+        font-size: 70px;
+    }
+    .home .max-width .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        padding: 10px 30px;
+        font-size: 23px;
+    }
+    .max-width {
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column ,.contact .contact-content .column{
+        width: 100%;
+    }
+    #tweet{
+        padding-left: 120px;
+    }
+}
+@media (max-width: 625px){
+    #tweet{
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 500px){
+    .max-width{
+        padding: 0 20px;
+    }
+    .home .max-width .text-2{
+        font-size: 60px;
+    }
+    .home .max-width .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        padding: 8px 24px;
+        font-size: 20px;
+    }
+    .max-width {
+        max-width: 500px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }  
+    .services .serv-content .card , .skills .skills-content .column ,.contact .contact-content .column {
+        width: 100%;
+    }
+    #tweet{
+        padding-left: 40px;
+    }
+}
+@media (max-width:427px){
+    #tweet{
+        padding-left: 7px;
+    }
+    .footer a{
+        margin-right: 25px;
+    }
+}
+
+
