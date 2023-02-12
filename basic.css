@@ -188,6 +188,12 @@ section{
     font-weight: 600;
     margin-bottom: 10px;
 }
+.ab-text{
+    font-size:1.5rem!important;
+}
+.ab-text-des{
+    font-size:1.2rem!important;
+}
 .about .about-content .right .text span{
     color: crimson;
 }
@@ -382,19 +388,28 @@ section{
     background: crimson;
 }
 .skills .skills-content .right .html::before{
-    width: 90%;
-}
-.skills .skills-content .right .css::before{
     width: 70%;
 }
+.skills .skills-content .right .css::before{
+    width: 60%;
+}
 .skills .skills-content .right .javascript::before{
-    width: 50%;
+    width: 75%;
 }
-.skills .skills-content .right .php::before{
-    width: 30%;
+.skills .skills-content .right .bootstrap::before{
+    width: 70%;
 }
-.skills .skills-content .right .sql::before{
-    width: 40%;
+.skills .skills-content .right .c::before{
+    width: 60%;
+}
+.skills .skills-content .right .cpp::before{
+    width: 70%;
+}
+.skills .skills-content .right .cpp-stl::before{
+    width: 80%;
+}
+.skills .skills-content .right .python::before{
+    width: 70%;
 }
 
 
@@ -405,7 +420,8 @@ section{
 
 
 
-                                                            /* teams section styling */
+
+                                                            /* projects section styling */
 .teams{
     font-family:'Times New Roman', Times, serif ;
     background: #111;
@@ -671,7 +687,7 @@ section{
     color: blue;
 }
 #whatsapp:hover{
-    color: grey;
+    color: rgb(17, 246, 29);
 }
 #insta:hover{
     color: rgb(236, 10, 149);
@@ -680,10 +696,10 @@ section{
     color: yellow;
 }
 #tele:hover{
-    color: blueviolet;
+    color: rgb(85, 155, 229);
 }
 #link:hover{
-    color: rgb(2, 2, 27);
+    color: rgb(82, 82, 209);
 }
 
 
@@ -830,5 +846,14 @@ section{
         margin-right: 25px;
     }
 }
+ 
 
 
+/*  */
+.made-love{
+    background-color: #111;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

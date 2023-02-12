@@ -36,13 +36,13 @@ $(document).ready(function(){
     });
                                                 // typing animation   
     var typed = new Typed(".typing" , {
-        strings:["Youtuber" ,"Freelancer" , "Designer" ,"Developer"],
+        strings:["Web Developer","Compititive Programmer" ,"DSA enthusiast" , "Entrepreneur"],
         typeSpeed: 100,
         backSpeed: 60,
         loop:true
     });
     var typed = new Typed(".typing-2" , {
-        strings:["Youtuber" ,"Freelancer" , "Designer" ,"Developer"],
+        strings:["Web Developer","Compititive Programmer" ,"DSA enthusiast" , "Entrepreneur"],
         typeSpeed: 100,
         backSpeed: 60,
         loop:true
